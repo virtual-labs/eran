@@ -64,8 +64,10 @@ body {font-family: "Lato", sans-serif}
 
  <br><br><br>
       <h2 class="w3-wide w3-center">Run ERAN Application</h2>
-
-                <p class="w3-justify"> <b><h4 class="w3-left-align"> 1. Pull docker image </h4> </b></p>
+          
+          <p class="w3-justify"> <b><h4 class="w3-left-align"> 1. Start docker service</h4> </b></p>
+          <code><span class="gp">$</span> sudo service docker start </code>
+          <p class="w3-justify"> <b><h4 class="w3-left-align"> 2. Pull docker image </h4> </b></p>
           <p> -> Choose one docker image</p>
           <p> a. Docker image with ERAN Application </p>
           <code><span class="gp">$</span> docker pull vlead/eran </code> 
@@ -73,10 +75,10 @@ body {font-family: "Lato", sans-serif}
           <code><span class="gp">$</span> docker pull vlead/eran-req </code> 
 
 
-           <p class="w3-justify"> <b><h4 class="w3-left-align"> 2. Create a docker container to run the application </h4> </b></p>
+           <p class="w3-justify"> <b><h4 class="w3-left-align"> 3. Create a docker container to run the application </h4> </b></p>
           <code><span class="gp">$</span> docker run -it vlead/eran </code>
 
-          <p class="w3-justify"> <b><h4 class="w3-left-align"> 3. Test ERAN  </h4> </b></p>
+          <p class="w3-justify"> <b><h4 class="w3-left-align"> 4. Test ERAN  </h4> </b></p>
           <p> After logging into the docker container, follow the below steps to run ERAN </p>
           <code><span class="gp">$</span> cd /ERAN/tf_verify </code> <br> <br>
 
