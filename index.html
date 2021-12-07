@@ -59,18 +59,19 @@ body {font-family: "Lato", sans-serif}
  <br><br><br>
       <h2 class="w3-wide w3-center">Run ERAN Application</h2>
           <p class="w3-justify"> <b><h4 class="w3-left-align"> Note: User should be familiar with <a href="https://docs.docker.com/get-started/" target="_blank">  docker</a> </b></p>
+          <br><br>
           <p class="w3-justify"> <b><h4 class="w3-left-align"> 1. Start docker service</h4> </b></p>
-          <code><span class="gp">$</span> sudo service docker start </code>
-          <p class="w3-justify"> <b><h4 class="w3-left-align"> 2. Pull docker image </h4> </b></p>
+          <code><span class="gp">$</span> sudo service docker start </code><br><br>
+          <p class="w3-justify"> <b><h4 class="w3-left-align"> 2. Pull docker image </h4> </b></p><br><br>
           <p> -> Choose one docker image</p>
           <p> a. Docker image with ERAN Application </p>
           <code><span class="gp">$</span> docker pull vlead/eran </code> 
           <p> b. Docker image with just the packages. User needs to install ERAN tool separately</p>
-          <code><span class="gp">$</span> docker pull vlead/eran-req </code> 
+          <code><span class="gp">$</span> docker pull vlead/eran-req </code> <br><br>
 
 
            <p class="w3-justify"> <b><h4 class="w3-left-align"> 3. Create a docker container to run the application </h4> </b></p>
-          <code><span class="gp">$</span> docker run -it vlead/eran </code>
+          <code><span class="gp">$</span> docker run -it vlead/eran </code><br><br>
 
           <p class="w3-justify"> <b><h4 class="w3-left-align"> 4. Test ERAN  </h4> </b></p>
           <p> After logging into the docker container, follow the below steps to run ERAN </p>
