@@ -44,22 +44,16 @@ body {font-family: "Lato", sans-serif}
 
 
  <h2 class="w3-wide w3-center">Docker Installtion</h2>
- <p class="w3-opacity w3-center"><i>Install docker on Ubuntu</i></p>
+ <p class="w3-opacity w3-center"><i>---</i></p>
 
   
-    <p class="w3-justify"> <b><h4 class="w3-left-align">  1. Update the apt package index and install packages to allow apt to use a repository over HTTPS: </h4></b></p>
-    <code><span class="gp">$</span> <span class="nb">sudo </span>apt-get update && apt-get install ca-certificates curl gnupg lsb-release </code>
-    <p class="w3-justify"> <b><h4 class="w3-left-align">  2. Add Docker’s official GPG key: </h4></b> </p>
-    <code><span class="gp">$</span> <span class="nb">sudo </span> curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg</code>
+    <p class="w3-justify"> <b><h4 class="w3-left-align">  1. Install docker on Ubuntu: </h4></b></p>
+    <code><span class="gp">$</span> <span class="nb">sudo </span> https://docs.docker.com/engine/install/ubuntu/</code>
+    <p class="w3-justify"> <b><h4 class="w3-left-align">  2. Install docker on Mac: </h4></b> </p>
+    <code><span class="gp">$</span> <span class="nb">sudo </span> https://docs.docker.com/desktop/mac/install/</code>
 
-    <p class="w3-justify"> <b><h4 class="w3-left-align">  3. Use the following command to set up the stable repository. To add the nightly or test repository, add the word nightly or test (or both) after the word stable in the commands below. Learn about nightly and test channels. </h4></b> </p>
-    <code><span class="gp">$</span> echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null</code>
-
-    <p class="w3-justify"> <b><h4 class="w3-left-align">  4. Install Docker Engine </h4></b> </p>
-    <code><span class="gp">$</span> <span class="nb">sudo </span>apt-get install docker-ce docker-ce-cli containerd.io </code>
-
-    <p class="w3-justify"> <b><h4 class="w3-left-align"> 5. Verify that Docker Engine is installed correctly by running the hello-world image. </h4> </b></p>
-    <code><span class="gp">$</span> <span class="nb">sudo </span>docker run hello-world </code>
+    <p class="w3-justify"> <b><h4 class="w3-left-align">  3. Install docker on Windows: </h4></b> </p>
+    <code><span class="gp">$</span> https://docs.docker.com/desktop/windows/install/</code>
 
 
  <br><br><br>
